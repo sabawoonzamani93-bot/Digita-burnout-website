@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Health Effects</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function checkQuiz() {
+let score = 0;
+
+if(document.getElementById("q1").checked) score++;
+if(document.getElementById("q2").checked) score++;
+if(document.getElementById("q3").checked) score++;
+
+alert("Your score: " + score + "/3\nIf you scored 2 or more, you may need to reduce screen time!");
+}
+</script>
+</head>
+<body>
+
+<h1>Health Effects of Screen Fatigue</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="symptoms.html">Symptoms</a>
+<a href="prevention.html">Prevention</a>
+<a href="diary.html">Diary</a>
+</nav>
+
+<div class="container">
+
+<p>Excessive screen time can affect both physical and mental health.</p>
+
+<ul>
+<li>Sleep disruption due to blue light</li>
+<li>Eye strain and headaches</li>
+<li>Reduced attention span</li>
+<li>Increased stress and anxiety</li>
+</ul>
+
+<h2>Quick Quiz</h2>
+<p>Do you experience these?</p>
+
+<input type="checkbox" id="q1"> Tired eyes after screen use<br>
+<input type="checkbox" id="q2"> Difficulty sleeping<br>
+<input type="checkbox" id="q3"> Trouble concentrating<br><br>
+
+<button onclick="checkQuiz()">Check Result</button>
+
+</div>
+
+</body>
+</html>
